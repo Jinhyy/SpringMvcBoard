@@ -5,14 +5,14 @@ import java.sql.Timestamp;
 public class JDto {
 	// about 게시판 글
 	int jId,jHit,jGroup,jStep,jIndent; 
-	String jName, jTitle;
+	String jName, jTitle, jContent;
 	Timestamp jDate;
 	
 	public JDto() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public JDto(int jId, int jHit, int jGroup, int jStep, int jIndent, String jName, String jTitle, Timestamp jDate) {
+	public JDto(int jId, int jHit, int jGroup, int jStep, int jIndent, String jName, String jTitle,String jContent, Timestamp jDate) {
 		super();
 		this.jId = jId;
 		this.jHit = jHit;
@@ -21,6 +21,7 @@ public class JDto {
 		this.jIndent = jIndent;
 		this.jName = jName;
 		this.jTitle = jTitle;
+		this.jContent = jContent;
 		this.jDate = jDate;
 	}
 	public int getjId() {
@@ -65,9 +66,18 @@ public class JDto {
 	public void setjTitle(String jTitle) {
 		this.jTitle = jTitle;
 	}
+	
+	public String getjContent() {
+		return jContent;
+	}
+	public void setjContent(String jContent) {
+		this.jContent = jContent;
+	}
+	
 	public Timestamp getjDate() {
 		return jDate;
 	}
+	
 	public void setjDate(Timestamp jDate) {
 		this.jDate = jDate;
 	}
