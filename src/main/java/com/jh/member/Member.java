@@ -1,5 +1,6 @@
 package com.jh.member;
 
+//¸â¹öÁÖ¼®~
 public class Member {
 	private String name, id, pw, email;
 
